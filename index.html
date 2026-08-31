@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>DhangarWedding - Find Your Perfect Match</title>
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f7f8fa;
+
+    color: #22252a;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   COLORS
+
+   Sapphire Blue  #153171
+   Rose Pink      #e83e5b
+   Light Pink     #fff0f3
+===================================================== */
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    height: 72px;
+
+    background: #ffffff;
+
+    border-bottom:
+        1px solid #e8eaee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+}
+
+.brand {
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #153171;
+
+    letter-spacing: -0.5px;
+
+}
+
+.brand span {
+
+    color: #e83e5b;
+
+}
+
+.nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.nav a {
+
+    color: #555b66;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+}
+
+.login {
+
+    border:
+        1px solid #153171;
+
+    color: #153171 !important;
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+
+}
+
+.login:hover {
+
+    background: #153171;
+
+    color: #ffffff !important;
+
+}
+
+.signup {
+
+    background: #e83e5b;
+
+    color: #ffffff !important;
+
+    padding: 11px 21px;
+
+    border-radius: 4px;
+
+}
+
+.signup:hover {
+
+    background: #d92f4c;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height:
+        calc(100vh - 72px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 55px 6% 70px;
+
+    background:
+
+        linear-gradient(
+            110deg,
+            #ffffff 0%,
+            #ffffff 53%,
+            #f5f7fb 53%,
+            #f5f7fb 100%
+        );
+
+}
+
+.hero-inner {
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        52%
+        48%;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+/* =====================================================
+   HERO LEFT
+===================================================== */
+
+.hero-left {
+
+    padding-right: 30px;
+
+}
+
+.tag {
+
+    display: inline-block;
+
+    background: #fff0f3;
+
+    color: #e83e5b;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+
+    font-size:
+        clamp(44px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    color: #153171;
+
+    letter-spacing: -2.5px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 span {
+
+    color: #e83e5b;
+
+}
+
+.hero-description {
+
+    max-width: 540px;
+
+    color: #666c76;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+.hero-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    font-size: 12px;
+
+    color: #777d86;
+
+}
+
+.hero-links strong {
+
+    color: #153171;
+
+}
+
+
+/* =====================================================
+   SEARCH CARD
+===================================================== */
+
+.search-card {
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 18px 55px
+        rgba(21,49,113,.12);
+
+    border:
+        1px solid #e7e9ee;
+
+}
+
+.search-header {
+
+    margin-bottom: 25px;
+
+}
+
+.search-header h2 {
+
+    color: #153171;
+
+    font-size: 23px;
+
+    margin-bottom: 5px;
+
+}
+
+.search-header p {
+
+    color: #858b94;
+
+    font-size: 12px;
+
+}
+
+
+/* form */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 15px;
+
+}
+
+.field label {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #707680;
+
+    margin-bottom: 6px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+}
+
+.field select {
+
+    width: 100%;
+
+    height: 44px;
+
+    padding: 0 12px;
+
+    background: #fafbfc;
+
+    border:
+        1px solid #dfe2e7;
+
+    border-radius: 5px;
+
+    color: #404650;
+
+    outline: none;
+
+}
+
+.field select:focus {
+
+    border-color: #153171;
+
+}
+
+
+/* search button */
+
+.search-button {
+
+    grid-column:
+        span 2;
+
+    height: 48px;
+
+    border: none;
+
+    background: #e83e5b;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+.search-button:hover {
+
+    background: #d92f4c;
+
+}
+
+
+/* =====================================================
+   TRUST BAR
+===================================================== */
+
+.trust-bar {
+
+    margin-top: 22px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    border-top:
+        1px solid #edf0f3;
+
+    padding-top: 20px;
+
+    gap: 10px;
+
+}
+
+.trust-item {
+
+    text-align: center;
+
+}
+
+.trust-number {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #153171;
+
+}
+
+.trust-label {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: #888e96;
+
+    margin-top: 2px;
+
+}
+
+
+/* =====================================================
+   BOTTOM FEATURE STRIP
+===================================================== */
+
+.feature-strip {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 65px;
+
+    background: #153171;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.features {
+
+    width: 88%;
+
+    max-width: 1000px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+}
+
+.feature {
+
+    text-align: center;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.15);
+
+}
+
+.feature:last-child {
+
+    border-right: none;
+
+}
+
+.feature strong {
+
+    display: block;
+
+    font-size: 12px;
+
+}
+
+.feature span {
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:850px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+
+        padding: 0 5%;
+
+    }
+
+    .nav a:not(.signup) {
+
+        display: none;
+
+    }
+
+    .hero {
+
+        min-height: auto;
+
+        padding:
+            55px 5% 90px;
+
+        background: #ffffff;
+
+    }
+
+    .hero-inner {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+    .hero-left {
+
+        padding-right: 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 50px;
+
+    }
+
+    .search-card {
+
+        padding: 25px;
+
+    }
+
+    .feature-strip {
+
+        position: relative;
+
+        height: auto;
+
+        padding: 20px 0;
+
+    }
+
+    .features {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+    .feature {
+
+        border-right: none;
+
+    }
+
+}
+
+
+@media(max-width:480px) {
+
+    .brand {
+
+        font-size: 21px;
+
+    }
+
+    .signup {
+
+        padding:
+            10px 14px;
+
+        font-size: 11px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 43px;
+
+        letter-spacing: -1.5px;
+
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .search-button {
+
+        grid-column: auto;
+
+    }
+
+    .trust-bar {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+```
+<div class="brand">
+    Dhangar<span>Wedding</span>
+</div>
+
+
+<nav class="nav">
+
+    <a href="#">
+        Home
+    </a>
+
+    <a href="#about">
+        About
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+
+    <a
+        href="#"
+        class="login">
+
+        Login
+
+    </a>
+
+    <a
+        href="https://forms.google.com/"
+        target="_blank"
+        class="signup">
+
+        Register Free
+
+    </a>
+
+</nav>
+```
+
+</header>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<!-- LEFT -->
+
+<div class="hero-left">
+
+<div class="tag">
+
+TRUSTED MATRIMONIAL PLATFORM
+
+</div>
+
+<h1>
+
+Find your
+
+<span>perfect match.</span>
+
+</h1>
+
+<p class="hero-description">
+
+Meet genuine people who share your
+values, dreams and vision for a
+beautiful life together.
+
+</p>
+
+<div class="hero-links">
+
+<span>
+    <strong>5000+</strong> Members
+</span>
+
+<span>
+    <strong>1000+</strong> Profiles
+</span>
+
+<span>
+    <strong>100+</strong> Connections
+</span>
+
+</div>
+
+</div>
+
+<!-- RIGHT SEARCH -->
+
+<div>
+
+<div class="search-card">
+
+<div class="search-header">
+
+<h2>
+Find Your Partner
+</h2>
+
+<p>
+Start your search in a few simple steps.
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>
+Looking For
+</label>
+
+<select>
+
+<option>Groom</option>
+
+<option>Bride</option>
+
+</select>
+
+</div>
+
+<div class="field">
+
+<label>
+Age
+</label>
+
+<select>
+
+<option>21 - 25</option>
+
+<option>26 - 30</option>
+
+<option>31 - 35</option>
+
+<option>36 - 40</option>
+
+</select>
+
+</div>
+
+<div class="field">
+
+<label>
+Location
+</label>
+
+<select>
+
+<option>Any Location</option>
+
+<option>Solapur</option>
+
+<option>Pune</option>
+
+<option>Mumbai</option>
+
+<option>Kolhapur</option>
+
+</select>
+
+</div>
+
+<div class="field">
+
+<label>
+Education
+</label>
+
+<select>
+
+<option>Any Education</option>
+
+<option>Graduate</option>
+
+<option>Post Graduate</option>
+
+<option>Engineering</option>
+
+<option>Professional</option>
+
+</select>
+
+</div>
+
+<a
+href="https://forms.google.com/"
+target="_blank"
+class="search-button"
+style="
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+">
+
+Let's Begin
+
+</a>
+
+</div>
+
+<div class="trust-bar">
+
+<div class="trust-item">
+
+<div class="trust-number">
+5K+
+</div>
+
+<span class="trust-label">
+Members
+</span>
+
+</div>
+
+<div class="trust-item">
+
+<div class="trust-number">
+1K+
+</div>
+
+<span class="trust-label">
+Profiles
+</span>
+
+</div>
+
+<div class="trust-item">
+
+<div class="trust-number">
+100+
+</div>
+
+<span class="trust-label">
+Connections
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FEATURE STRIP
+===================================================== -->
+
+<div class="feature-strip">
+
+<div class="features">
+
+<div class="feature">
+
+<strong>
+Verified Profiles
+</strong>
+
+<span>
+Quality connections
+</span>
+
+</div>
+
+<div class="feature">
+
+<strong>
+Privacy Protected
+</strong>
+
+<span>
+Your information stays secure
+</span>
+
+</div>
+
+<div class="feature">
+
+<strong>
+Family Friendly
+</strong>
+
+<span>
+Built for meaningful relationships
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
