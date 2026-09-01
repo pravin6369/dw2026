@@ -11,6 +11,7 @@ content="width=device-width, initial-scale=1.0">
 
 <title>DhangarWedding - Find Your Perfect Match</title>
 
+
 <style>
 
 /* =====================================================
@@ -26,7 +27,7 @@ content="width=device-width, initial-scale=1.0">
 html,
 body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
@@ -39,6 +40,8 @@ body {
     background: #f7f8fa;
 
     color: #22252a;
+
+    overflow: hidden;
 
 }
 
@@ -62,7 +65,7 @@ a {
 
 .header {
 
-    height: 72px;
+    height: 64px;
 
     background: #ffffff;
 
@@ -124,7 +127,7 @@ a {
 
     color: #153171 !important;
 
-    padding: 10px 20px;
+    padding: 9px 20px;
 
     border-radius: 4px;
 
@@ -144,7 +147,7 @@ a {
 
     color: #ffffff !important;
 
-    padding: 11px 21px;
+    padding: 10px 21px;
 
     border-radius: 4px;
 
@@ -163,14 +166,15 @@ a {
 
 .hero {
 
-    min-height:
-        calc(100vh - 72px);
+    height: calc(100vh - 64px);
+
+    min-height: 0;
 
     display: flex;
 
     align-items: center;
 
-    padding: 55px 6% 70px;
+    padding: 25px 6% 86px;
 
     background:
 
@@ -200,7 +204,7 @@ a {
 
     align-items: center;
 
-    gap: 30px;
+    gap: 25px;
 
 }
 
@@ -223,30 +227,30 @@ a {
 
     color: #e83e5b;
 
-    padding: 8px 14px;
+    padding: 7px 13px;
 
     border-radius: 30px;
 
-    font-size: 11px;
+    font-size: 10px;
 
     font-weight: 700;
 
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
 }
 
 .hero h1 {
 
     font-size:
-        clamp(44px, 5vw, 70px);
+        clamp(40px, 4.5vw, 62px);
 
-    line-height: 1.05;
+    line-height: 1.02;
 
     color: #153171;
 
     letter-spacing: -2.5px;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -262,11 +266,11 @@ a {
 
     color: #666c76;
 
-    font-size: 16px;
+    font-size: 14px;
 
-    line-height: 1.7;
+    line-height: 1.5;
 
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 
 }
 
@@ -299,9 +303,9 @@ a {
 
     background: #ffffff;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
-    padding: 32px;
+    padding: 24px;
 
     box-shadow:
         0 18px 55px
@@ -314,7 +318,7 @@ a {
 
 .search-header {
 
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 
 }
 
@@ -322,9 +326,9 @@ a {
 
     color: #153171;
 
-    font-size: 23px;
+    font-size: 21px;
 
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 
 }
 
@@ -332,12 +336,14 @@ a {
 
     color: #858b94;
 
-    font-size: 12px;
+    font-size: 11px;
 
 }
 
 
-/* form */
+/* =====================================================
+   FORM
+===================================================== */
 
 .form-grid {
 
@@ -347,7 +353,7 @@ a {
         1fr
         1fr;
 
-    gap: 15px;
+    gap: 11px;
 
 }
 
@@ -355,13 +361,13 @@ a {
 
     display: block;
 
-    font-size: 10px;
+    font-size: 9px;
 
     font-weight: 700;
 
     color: #707680;
 
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 
     text-transform: uppercase;
 
@@ -373,7 +379,7 @@ a {
 
     width: 100%;
 
-    height: 44px;
+    height: 40px;
 
     padding: 0 12px;
 
@@ -397,14 +403,16 @@ a {
 }
 
 
-/* search button */
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
 
 .search-button {
 
     grid-column:
         span 2;
 
-    height: 48px;
+    height: 43px;
 
     border: none;
 
@@ -419,6 +427,14 @@ a {
     font-size: 13px;
 
     cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
 
 }
 
@@ -435,7 +451,7 @@ a {
 
 .trust-bar {
 
-    margin-top: 22px;
+    margin-top: 15px;
 
     display: grid;
 
@@ -445,7 +461,7 @@ a {
     border-top:
         1px solid #edf0f3;
 
-    padding-top: 20px;
+    padding-top: 14px;
 
     gap: 10px;
 
@@ -481,6 +497,60 @@ a {
 
 
 /* =====================================================
+   BUSINESS FOOTER
+===================================================== */
+
+.business-footer {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 52px;
+
+    height: 34px;
+
+    background: #ffffff;
+
+    border-top:
+        1px solid #e8eaee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 0 15px;
+
+}
+
+.business-footer p {
+
+    margin: 0;
+
+    color: #777d86;
+
+    font-size: 12px;
+
+    line-height: 18px;
+
+}
+
+.business-footer strong {
+
+    color: #153171;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
    BOTTOM FEATURE STRIP
 ===================================================== */
 
@@ -488,13 +558,13 @@ a {
 
     position: absolute;
 
-    bottom: 0;
-
     left: 0;
 
     right: 0;
 
-    height: 65px;
+    bottom: 0;
+
+    height: 52px;
 
     background: #153171;
 
@@ -505,6 +575,8 @@ a {
     align-items: center;
 
     justify-content: center;
+
+    padding: 0;
 
 }
 
@@ -541,7 +613,7 @@ a {
 
     display: block;
 
-    font-size: 12px;
+    font-size: 11px;
 
 }
 
@@ -550,7 +622,7 @@ a {
     color:
         rgba(255,255,255,.65);
 
-    font-size: 10px;
+    font-size: 9px;
 
 }
 
@@ -562,10 +634,16 @@ a {
 @media(max-width:850px) {
 
     body {
+
         overflow-x: hidden;
+
+        overflow-y: auto;
+
     }
 
     .header {
+
+        height: 64px;
 
         padding: 0 5%;
 
@@ -579,10 +657,12 @@ a {
 
     .hero {
 
-        min-height: auto;
+        height: auto;
+
+        min-height: calc(100vh - 64px);
 
         padding:
-            55px 5% 90px;
+            35px 5% 80px;
 
         background: #ffffff;
 
@@ -592,7 +672,7 @@ a {
 
         grid-template-columns: 1fr;
 
-        gap: 40px;
+        gap: 25px;
 
     }
 
@@ -604,13 +684,13 @@ a {
 
     .hero h1 {
 
-        font-size: 50px;
+        font-size: 48px;
 
     }
 
     .search-card {
 
-        padding: 25px;
+        padding: 22px;
 
     }
 
@@ -620,7 +700,7 @@ a {
 
         height: auto;
 
-        padding: 20px 0;
+        padding: 18px 0;
 
     }
 
@@ -638,8 +718,28 @@ a {
 
     }
 
+    .business-footer {
+
+        position: relative;
+
+        left: auto;
+
+        right: auto;
+
+        bottom: auto;
+
+        height: auto;
+
+        padding: 12px 15px;
+
+    }
+
 }
 
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 
 @media(max-width:480px) {
 
@@ -652,15 +752,21 @@ a {
     .signup {
 
         padding:
-            10px 14px;
+            9px 13px;
 
-        font-size: 11px;
+        font-size: 10px;
+
+    }
+
+    .hero {
+
+        padding-top: 30px;
 
     }
 
     .hero h1 {
 
-        font-size: 43px;
+        font-size: 40px;
 
         letter-spacing: -1.5px;
 
@@ -668,7 +774,7 @@ a {
 
     .hero-description {
 
-        font-size: 14px;
+        font-size: 13px;
 
     }
 
@@ -686,7 +792,10 @@ a {
 
     .trust-bar {
 
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:
+            1fr
+            1fr
+            1fr;
 
     }
 
@@ -696,7 +805,9 @@ a {
 
 </head>
 
+
 <body>
+
 
 <!-- =====================================================
      HEADER
@@ -704,47 +815,49 @@ a {
 
 <header class="header">
 
-```
-<div class="brand">
-    Dhangar<span>Wedding</span>
-</div>
+    <div class="brand">
+
+        Dhangar<span>Wedding</span>
+
+    </div>
 
 
-<nav class="nav">
+    <nav class="nav">
 
-    <a href="#">
-        Home
-    </a>
+        <a href="#">
+            Home
+        </a>
 
-    <a href="#about">
-        About
-    </a>
+        <a href="#about">
+            About
+        </a>
 
-    <a href="#contact">
-        Contact
-    </a>
+        <a href="#contact">
+            Contact
+        </a>
 
-    <a
-        href="#"
-        class="login">
+        <a
+            href="#"
+            class="login">
 
-        Login
+            Login
 
-    </a>
+        </a>
 
-    <a
-        href="https://forms.gle/tJTfhyGeezfPY5bX9"
-        target="_blank"
-        class="signup">
+        <a
+            href="https://forms.gle/tJTfhyGeezfPY5bX9"
+            target="_blank"
+            class="signup">
 
-        Register Free
+            Register Free
 
-    </a>
+        </a>
 
-</nav>
-```
+    </nav>
 
 </header>
+
+
 
 <!-- =====================================================
      HERO
@@ -752,266 +865,364 @@ a {
 
 <section class="hero">
 
-<div class="hero-inner">
+    <div class="hero-inner">
 
-<!-- LEFT -->
 
-<div class="hero-left">
+        <!-- LEFT -->
 
-<div class="tag">
+        <div class="hero-left">
 
-TRUSTED MATRIMONIAL PLATFORM
+            <div class="tag">
 
-</div>
+                TRUSTED MATRIMONIAL PLATFORM
 
-<h1>
+            </div>
 
-Find your
 
-<span>perfect match.</span>
+            <h1>
 
-</h1>
+                Find your
 
-<p class="hero-description">
+                <span>perfect match.</span>
 
-Meet genuine people who share your
-values, dreams and vision for a
-beautiful life together.
+            </h1>
 
-</p>
 
-<div class="hero-links">
+            <p class="hero-description">
 
-<span>
-    <strong>5000+</strong> Members
-</span>
+                Meet genuine people who share your
+                values, dreams and vision for a
+                beautiful life together.
 
-<span>
-    <strong>1000+</strong> Profiles
-</span>
+            </p>
 
-<span>
-    <strong>100+</strong> Connections
-</span>
 
-</div>
+            <div class="hero-links">
 
-</div>
+                <span>
 
-<!-- RIGHT SEARCH -->
+                    <strong>5000+</strong>
+                    Members
 
-<div>
+                </span>
 
-<div class="search-card">
 
-<div class="search-header">
+                <span>
 
-<h2>
-Find Your Partner
-</h2>
+                    <strong>1000+</strong>
+                    Profiles
 
-<p>
-Start your search in a few simple steps.
-</p>
+                </span>
 
-</div>
 
-<div class="form-grid">
+                <span>
 
-<div class="field">
+                    <strong>100+</strong>
+                    Connections
 
-<label>
-Looking For
-</label>
+                </span>
 
-<select>
+            </div>
 
-<option>Groom</option>
+        </div>
 
-<option>Bride</option>
 
-</select>
 
-</div>
+        <!-- RIGHT SEARCH -->
 
-<div class="field">
+        <div>
 
-<label>
-Age
-</label>
+            <div class="search-card">
 
-<select>
 
-<option>21 - 25</option>
+                <div class="search-header">
 
-<option>26 - 30</option>
+                    <h2>
+                        Find Your Partner
+                    </h2>
 
-<option>31 - 35</option>
+                    <p>
+                        Start your search in a few simple steps.
+                    </p>
 
-<option>36 - 40</option>
+                </div>
 
-</select>
 
-</div>
+                <div class="form-grid">
 
-<div class="field">
 
-<label>
-Location
-</label>
+                    <!-- LOOKING FOR -->
 
-<select>
+                    <div class="field">
 
-<option>Any Location</option>
+                        <label>
+                            Looking For
+                        </label>
 
-<option>Solapur</option>
+                        <select>
 
-<option>Pune</option>
+                            <option>
+                                Groom
+                            </option>
 
-<option>Mumbai</option>
+                            <option>
+                                Bride
+                            </option>
 
-<option>Kolhapur</option>
+                        </select>
 
-</select>
+                    </div>
 
-</div>
 
-<div class="field">
 
-<label>
-Education
-</label>
+                    <!-- AGE -->
 
-<select>
+                    <div class="field">
 
-<option>Any Education</option>
+                        <label>
+                            Age
+                        </label>
 
-<option>Graduate</option>
+                        <select>
 
-<option>Post Graduate</option>
+                            <option>
+                                21 - 25
+                            </option>
 
-<option>Engineering</option>
+                            <option>
+                                26 - 30
+                            </option>
 
-<option>Professional</option>
+                            <option>
+                                31 - 35
+                            </option>
 
-</select>
+                            <option>
+                                36 - 40
+                            </option>
 
-</div>
+                        </select>
 
-<a
-href="https://forms.gle/tJTfhyGeezfPY5bX9"
-target="_blank"
-class="search-button"
-style="
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-">
+                    </div>
 
-Let's Begin
 
-</a>
 
-</div>
+                    <!-- LOCATION -->
 
-<div class="trust-bar">
+                    <div class="field">
 
-<div class="trust-item">
+                        <label>
+                            Location
+                        </label>
 
-<div class="trust-number">
-5K+
-</div>
+                        <select>
 
-<span class="trust-label">
-Members
-</span>
+                            <option>
+                                Any Location
+                            </option>
 
-</div>
+                            <option>
+                                Solapur
+                            </option>
 
-<div class="trust-item">
+                            <option>
+                                Pune
+                            </option>
 
-<div class="trust-number">
-1K+
-</div>
+                            <option>
+                                Mumbai
+                            </option>
 
-<span class="trust-label">
-Profiles
-</span>
+                            <option>
+                                Kolhapur
+                            </option>
 
-</div>
+                        </select>
 
-<div class="trust-item">
+                    </div>
 
-<div class="trust-number">
-100+
-</div>
 
-<span class="trust-label">
-Connections
-</span>
 
-</div>
+                    <!-- EDUCATION -->
 
-</div>
+                    <div class="field">
 
-</div>
+                        <label>
+                            Education
+                        </label>
 
-</div>
+                        <select>
 
-</div>
+                            <option>
+                                Any Education
+                            </option>
 
-</div>
+                            <option>
+                                Graduate
+                            </option>
+
+                            <option>
+                                Post Graduate
+                            </option>
+
+                            <option>
+                                Engineering
+                            </option>
+
+                            <option>
+                                Professional
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SEARCH BUTTON -->
+
+                    <a
+                        href="https://forms.gle/tJTfhyGeezfPY5bX9"
+                        target="_blank"
+                        class="search-button">
+
+                        Let's Begin
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- TRUST BAR -->
+
+                <div class="trust-bar">
+
+
+                    <div class="trust-item">
+
+                        <div class="trust-number">
+                            5K+
+                        </div>
+
+                        <span class="trust-label">
+                            Members
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <div class="trust-number">
+                            1K+
+                        </div>
+
+                        <span class="trust-label">
+                            Profiles
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <div class="trust-number">
+                            100+
+                        </div>
+
+                        <span class="trust-label">
+                            Connections
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 </section>
 
+
+
 <!-- =====================================================
-     FEATURE STRIP
+     BUSINESS / LEGAL FOOTER
+===================================================== -->
+
+<footer class="business-footer">
+
+    <p>
+
+        DhangarWedding is a matrimonial
+        service/business operated by
+        <strong>ManeInfotech</strong>.
+
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOTTOM FEATURE STRIP
 ===================================================== -->
 
 <div class="feature-strip">
 
-<div class="features">
+    <div class="features">
 
-<div class="feature">
 
-<strong>
-Verified Profiles
-</strong>
+        <div class="feature">
 
-<span>
-Quality connections
-</span>
+            <strong>
+                Verified Profiles
+            </strong>
+
+            <span>
+                Quality connections
+            </span>
+
+        </div>
+
+
+        <div class="feature">
+
+            <strong>
+                Privacy Protected
+            </strong>
+
+            <span>
+                Your information stays secure
+            </span>
+
+        </div>
+
+
+        <div class="feature">
+
+            <strong>
+                Family Friendly
+            </strong>
+
+            <span>
+                Built for meaningful relationships
+            </span>
+
+        </div>
+
+
+    </div>
 
 </div>
 
-<div class="feature">
-
-<strong>
-Privacy Protected
-</strong>
-
-<span>
-Your information stays secure
-</span>
-
-</div>
-
-<div class="feature">
-
-<strong>
-Family Friendly
-</strong>
-
-<span>
-Built for meaningful relationships
-</span>
-
-</div>
-
-</div>
-
-</div>
 
 </body>
 
